@@ -4,6 +4,7 @@ import { BAD_REQUEST } from "./constants/httpStatus.js";
 export default (req, res, next) => {
   let { transactionid } = req.headers;
   if (!transactionid) {
+    console.log("Passou aqui transaction.");
     return res.status(BAD_REQUEST).json({
       status: BAD_REQUEST,
       message: "The transactionid header is required.",

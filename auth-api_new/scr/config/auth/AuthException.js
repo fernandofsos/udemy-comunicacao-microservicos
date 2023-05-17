@@ -1,5 +1,6 @@
 class AuthException extends Error {
   constructor(status, message) {
+    console.log("Passou aqui AuthException");
     super(message);
     this.status = status;
     this.message = message;

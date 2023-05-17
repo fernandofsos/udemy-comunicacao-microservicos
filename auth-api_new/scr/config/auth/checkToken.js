@@ -19,7 +19,7 @@ export default async (req, res, next) => {
     }
     let accessToken = authorization;
     if (accessToken.includes(emptySpace)) {
-      accessToken = accessToken.split(emptySpace)[1];
+     accessToken = accessToken.split(emptySpace)[1];
     } else {
       accessToken = authorization;
     }

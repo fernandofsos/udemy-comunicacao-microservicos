@@ -32,7 +32,7 @@ app.get("/api/initial-data", (req, res) => {
   return res.json({ message: "Data created." });
 });
 
-app.use(tracing);
+//app.use(tracing);
 app.use(userRoutes);
 
 app.listen(PORT, () => {

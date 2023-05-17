@@ -1,5 +1,7 @@
 class UserException extends Error {
+ 
   constructor(status, message) {
+    console.log("erro");
     super(message);
     this.status = status;
     this.message = message;
